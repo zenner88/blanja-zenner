@@ -1,0 +1,150 @@
+<div class="main-content">
+  <div class="container">
+        <div class="row">
+                <div class="card">
+                    <div class="card-header card-header-tabs card-header-rose">
+                        <div class="nav-tabs-navigation">
+                            <div class="nav-tabs-wrapper">
+                                <h3 class="card-title">{{restItems.name}}</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                    <div class="col-md-2">
+                        <div class="text-center container-fluid mt-3">
+                            <img src="https://www.shareicon.net/data/128x128/2015/09/08/98071_man_512x512.png" class="img-fluid" alt="{{restItems.name}}">
+                        </div>
+                    </div> 
+                    <div class="col-md-4"> 
+                        <div class="card-body">
+                            <table class="">
+                                    <tr>
+                                        <td>Height</td>
+                                        <td>
+                                            :
+                                        </td>
+                                        <td>
+                                                &nbsp;  {{restItems.height}}
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Mass</td>
+                                        <td>
+                                            :
+                                        </td>
+                                        <td>
+                                                &nbsp;    {{restItems.mass}}
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Hair Color</td>
+                                        <td>
+                                            :
+                                        </td>
+                                        <td>
+                                                &nbsp;    {{restItems.hair_color}}
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Skin Color</td>
+                                        <td>
+                                            :
+                                        </td>
+                                        <td>
+                                                &nbsp;   {{restItems.skin_color}}
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Birth Year</td>
+                                        <td>
+                                            :
+                                        </td>
+                                        <td>
+                                                &nbsp;    {{restItems.birth_year}}
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Gender</td>
+                                        <td>
+                                            :
+                                        </td>
+                                        <td>
+                                            &nbsp;{{restItems.gender}}
+                                        </td>
+                                    </tr>
+                            </table>
+                        </div>
+            </div>
+        </div>
+      </div>
+
+      
+
+      <div class="row">
+        <div class="col-md-8"> 
+        <div class="card">
+            <div class="card-header card-header-tabs card-header-info">
+                <div class="nav-tabs-navigation">
+                    <div class="row">
+                        <div class="col-md-6">
+                                <div class="text-left">
+                            <h3 class="card-title" class="ml-3">{{restItems.name}} Movie's</h3>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="text-right">
+                            <h4><a href="#">See More</a></h4>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>   
+            <div class="row">
+                <tr>  
+                    <td *ngFor="let post of restItems['films']">
+                        <div class="col-md-3">
+                            <div class="card card-chart">
+                                <div class="card-header card-header-success">
+                
+                                </div>
+                                <div class="card-body">
+                                    <h4 class="card-title"></h4>
+                                    
+                                </div>
+                                <div class="card-footer">
+                                    <div class="stats">
+                                       Director : 
+                                       Release :
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                </tr>   
+        </div>  
+        </div>          
+        </div>
+        <div class="col-md-1">
+        </div>
+        <div class="col-md-3">
+            <div class="row">
+                <div class="card">
+                    <div class="card-header card-header-tabs card-header-info">
+                        <div class="nav-tabs-navigation">
+                            <div class="nav-tabs-wrapper">
+                                <h4>Related Another Movie's</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                            <div class="tab-content">
+                                <div class="tab-pane active" id="profile">
+                                    
+                                </div>
+                            </div>                            
+                    </div>
+            </div>
+        </div>
+      </div>
+  </div>
+</div>
